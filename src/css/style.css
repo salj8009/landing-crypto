@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --cream : #F2F1F0;
+    --pewter : #C0C9CC;
+    --sagegreen : #A39D92;
+    --gunmetalgray : #2c2a26;
+    --white : #ffff;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--cream);
+}
+header {
+    background-image: linear-gradient(to bottom, #c0c9cc, #a4aeae, #8c948f, #777a73, #636059);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;;
+    text-align: center;
+    height: 320px;
+    min-width: 320px;
+    width: 100%;
+}
+header .logo {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 150%;
+    height: 50%;
+    min-width: 30px;
+    min-height: 30px;
+}
+header .header-title__container {
+    min-width: 270px;
+    max-width: 900px;
+    min-width: 320px;
+    width: 90%;
+    margin: 0 16px;
+}
+header h1 {
+    color: var(--white);
+    font-size: 2.7rem;
+    font-weight: bold;
+    line-height: 2rem;
+    margin-bottom: 25px;
+}
+header .header__parrafo {
+    color: var(--white);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+header .header__button {
+    position: absolute;
+    padding: 1rem;
+    left: calc(50% - 50px);
+    display: block;
+    margin-top: 20px;
+    top: 280px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--pewter);
+    box-shadow: 0px 4px 8px rgb(89 73 30 / 16%);
+    
+}
+header .header__button a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+}
+main {
+    width: 100%;
+    height: auto;    
+}
+main .main-container-info .img-background {
+    width: 100%;
+    height: 350px;
+    background-image: url('../assets/img/bitcion.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+main .main-container-info {
+    text-align: center;    
+    width: 100%;
+    margin: 0 auto;
+}
+main .main-container-info h2 {
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 2.6rem;
+    padding-top: 80px;
+    color: var(--gunmetalgray);
+    margin-bottom: 50px;
+}
+main .main-container-info p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+main .main-container-price {
+    background-color: var(--gunmetalgray);
+    min-width: 320px;
+    width: 100%;
+    height: auto;
+}
+
+main .main-container-price__activos {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 20px 14px; 
+    place-items: center;
+    margin-top: 70px;
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-template-areas: 
+      "moneda1 precio1"
+      "moneda2 precio2"
+      "moneda3 precio3"
+      "moneda4 precio4"; 
+  }
+  .moneda1 { grid-area: moneda1; }
+  .moneda2 { grid-area: moneda2; }
+  .moneda3 { grid-area: moneda3; }
+  .moneda4 { grid-area: moneda4; }
+  .precio1 { grid-area: precio1; }
+  .precio2 { grid-area: precio2; }
+  .precio3 { grid-area: precio3; }
+  .precio4 { grid-area: precio4; }
+  footer {    
+    text-align: center;
+    background-color: var(--cream);
+    height: 120px;
+    width: 100;
+    min-width: 320px;
+  }
+  footer p {
+    margin-top: 50px;
+    font-size: 1.4rem;
+  }
